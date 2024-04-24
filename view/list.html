@@ -1,0 +1,42 @@
+
+<div class="container">
+    <h1 class="py-1 text-center">{{ title }}</h1>
+
+    <div class="text-end">
+        <a href="#!/add-student" >
+            <button class="btn btn-success mb-4">Thêm học viên mới</button>
+        </a>
+    </div>
+   
+    <div class="text-center">
+        <form class="d-lg-inline-flex ol " role="search">
+            <button class="btn btn-primary me-3" type="submit" >Tìm kiếm</button> 
+            <input class="form-control me-2" type="search" ng-model="filter" ng-change="search()" placeholder="Search" aria-label="Search" style="width: 800px;">
+           
+        </form>
+    </div>
+    <br>
+    <table class="table table-bordered border-black">
+        <thead>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Ngày sinh</th>
+            <th class="text-center">Chức năng</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in listStudentFiltered  track by $index ">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ item.hoTen }}</td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.ngaySinh | date : 'dd/MM/yyyy'}}</td>
+                <td class="text-center">
+                    <a href="#!/detail/{{item.id}}" class="text-decoration-none">
+                        <button class="btn btn-warning">Xem chi tiết</button>
+                    </a>
+                    <button ng-click="deleteStudent(item.id)" class="btn btn-danger">Xóa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="card my-3">
+        <h5 class="card-header">{{ title }}</h5>
+        <div class="card-body">
+            <form ng-submit="createStudent()">
+                <label class="form-label">Họ tên:</label>
+                <input type="text" class="form-control" ng-model="inputValue.hoTen">
+                <p class="text-danger" ng-if="kiemTra.hoTen">Vui lòng nhập lại họ tên!</p>
+                <label class="form-label">Email:</label>
+                <input type="text" class="form-control" ng-model="inputValue.email">
+                <p class="text-danger" ng-if="kiemTra.email">Vui lòng nhập lại email!</p>
+                <label class="form-label">Ngày sinh:</label>
+                <input type="date" class="form-control" ng-model="inputValue.ngaySinh">
+                <p class="text-danger" ng-if="kiemTra.ngaySinh">Vui lòng nhập lại ngày sinh!</p>
+                
+                    <button type="submit" class="btn btn-success mt-3 ">Thêm sinh viên</button>
+                
+                <a href="#!/list">
+                    <button type="submit" class="btn btn-secondary mt-3 ">Quay lại</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

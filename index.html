@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <script src="libs/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Trang chủ</title>
+
+    <style>
+        .ol{
+            margin-left: -160px;
+            padding-top: 15px;
+        }
+        .hv:hover{
+          background-color: #eb1f3a;
+          color: white;
+          font-weight: 100;
+        }
+        .custom-modal-footer {
+                    width: 100%; 
+                    display: flex; 
+                    justify-content: space-between; 
+                }
+
+                .custom-modal-footer .btn {
+                    flex: 1; 
+                }
+    
+       
+        
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <!--  -->
+    <div class=" sticky-top">
+        <nav class=" col-12  navbar navbar-expand-lg  " style="background-color: #eb1f3a; ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5" >
+                  <li class="nav-item">
+                    
+                    <a class="nav-link active " style="color: white;" aria-current="page" href="#"><i class="bi bi-telephone-fill"></i> HotLine:0367663906</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white;" href="#"> <i class="bi bi-envelope-fill"></i> Email: hopcxph34686@fpt.edu.vn</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i>  
+                      Ngôn Ngữ
+                    </a>
+                    <ul class="dropdown-menu">
+                      
+                      <li><a id="vietnamese" class="dropdown-item" href="#">Tiếng Việt <img src="./IMG/vietnam.png" alt="" width="20%"> </a></li>
+                      <li><a id="english" class="dropdown-item" href="#">Tiếng Anh <img src="./IMG/united-kingdom.png" alt="" width="20%"> </a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+                
+                <ul class="navbar-nav pe-5 ">
+                    <li class="nav-item">
+                      
+                      <a class="nav-link active" style="color: white;" aria-current="page" href="#"><i class="bi bi-cart4"></i></i> </a>
+                    </li>
+                    <li class="nav-item mx-2">
+
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <i class="bi bi-person-circle"></i> Đăng Nhập</button>
+                      
+
+                    </li>
+                    <li class="nav-item">
+
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#DangKy">
+                        Đăng Ký
+                    </button>
+
+                        
+
+                        <!--  -->
+                      </li>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5" >
+                        <div class="ps-5">
+                            <a class="nav-link active" aria-current="page" href="#!/trangchu">
+                                    <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/28643639-1582340275030-logongoaingu24h.jpg" width="40%">
+                            </a> 
+                        </div>
+                        <div>
+                            <form class="d-lg-inline-flex ol " role="search">
+                            
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 800px;">
+                                <button class="btn btn-outline-primary " type="submit" >Search</button>
+                            </form>
+                        </div>
+        
+                    </ul>
+                    
+                    <ul class="navbar-nav pe-5 ">
+                       
+                        <!-- <li class="nav-item  pe-3">
+                          <a class="nav-link " href="#"  style="color: #eb1f3a; font-weight: 500;" >  Khóa Học </a>
+                        </li> -->
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" style="color: #eb1f3a;font-weight: 500;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                
+                            Khóa học 
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" >Cơ Bản </a> </li> 
+                            <li><a class="dropdown-item" href="#"> Trung    </a></li>
+                            <li><a class="dropdown-item" href="#">  VIP  </a></li>
+                           
+                            
+                          </ul>
+                        </li>
+                        <li class="nav-item pe-3 ">
+                            <a class="nav-link" href="#!/hotcombo" style="color: #eb1f3a; font-weight: 500;" > </i> Hot <i class="bi bi-fire"></i> </a>
+                            
+                        </li>
+                        <li class="nav-item pe-3">
+                          <a class="nav-link" href="#!/tailieu"  style="color: #eb1f3a; font-weight: 500;"> </i>Tài Liệu   </a>
+                      </li>
+                      <li class="nav-item pe-3">
+                        <a class="nav-link" href="#!/list"  style="color: #eb1f3a; font-weight: 500;"> </i>Danh sách   </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </div>
+
+    <!--banner  -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/872897286-1698889526207-bannertoeicchaywebnn24h-cbcaptoc2.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/449297327-1698889632911-bannertoeicchaywebnn24h-2k7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/639283166-1695173101429-bannertoeicchaywebnn24h.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/10683635-1671768390397-925938989-1670834570829-24h1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://storage.googleapis.com/comaiphuong-edu-media/images/537200634-1671768403048-971049907-1670834605013-24h2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+    </div>
+
+    <!-- VIEW -->
+    
+
+         
+        <!-- Thân -->
+        <div ng-view></div>
+        <!-- Phải -->
+       
+   
+       
+        
+    <!--  -->
+   
+    <!-- Fotter -->
+    <footer class="bg-dark ">
+                      <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="mt-5 mb-5 w-100">
+                                    <h5 class="text-white pb-2">Địa chỉ</h5>
+                                    <ul class="list-unstyled d-inline-flex flex-column gap-1" style="color: #bebdbd;">
+                                        <li>
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                            <span>Trịnh Văn Bô - Hà Nội - Việt Nam</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-envelope-fill"></i>
+                                            <span>Caodangfpt@fpt.edu.vn</span>
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-telephone-fill"></i>
+                                            <span>0367663906</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="mt-5 mb-5 w-100">
+                                    <h5 class="text-white pb-2">Giới thiệu</h5>
+                                    <ul class="list-unstyled d-inline-flex flex-column gap-1" style="color: #bebdbd;">
+                                        <li>
+                                            <span>Chất lượng đầu ra</span>
+                                        </li>
+                                        <li>
+                                            <span>Học hăng say, chơi mê say </span>
+                                        </li>
+                                        <li>
+                                            <span>Sản phẩm</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="mt-5 mb-5 w-100">
+                                    <h5 class="text-white pb-2">Chính sách</h5>
+                                    <ul class="list-unstyled d-inline-flex flex-column gap-1" style="color: #bebdbd;">
+                                        <li>
+                                            <span>Chính sách chung</span>
+                                        </li>
+                                        <li>
+                                            <span>Chính sách bảo mật thông tin  </span>
+                                        </li>
+                                        <li>
+                                            <span>Hướng dẫn mua hàng</span>
+                                        </li>
+                                        <li>
+                                          <span>Hướng dẫn kích hoạt khóa học </span>
+                                      </li>
+                                    </ul>
+                                    <img  src="./IMG/dathongbao.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6 col-12">
+                              <div class="mt-5 mb-5 w-100">
+                                  <h5 class="text-white pb-2">Kết nối</h5>
+                                  <div>
+                                      <a href="https://www.facebook.com/cu.hop.33"><img src="./IMG/facebook (1).png" alt="" width="30%"></a>
+                                      <a href=""><img src="./IMG/messenger.png" alt="" width="30%"></a>
+                                      
+                                      <a href=""><img src="./IMG/instagram.png" alt="" width="30%"></a>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+    </footer>
+
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <script src="route.js"></script>
+    <script src="controller/listController.js"></script>
+    <script src="controller/addController.js"></script>
+    <script src="controller/editController.js"></script>
+    <script src="controller/trangchuController.js"></script>
+    <script src="controller/detailController.js"></script>
+    <script src="controller/hotcomboController.js"></script>
+    <script src="controller/tailieuController.js"></script>
+ 
+</body>
+
+</html>

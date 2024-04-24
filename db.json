@@ -1,0 +1,52 @@
+{
+  "student": [
+    {
+      "hoTen": "Hopcx",
+      "email": "cuho12aaap@gmail.com",
+      "ngaySinh": "2004-07-16T17:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "hoTen": "ảga",
+      "email": "bfd@gmail.com",
+      "ngaySinh": "2024-01-04T17:00:00.000Z",
+      "id": "2"
+    },
+    {
+      "hoTen": "jjjj",
+      "email": "ys@gmail.com",
+      "ngaySinh": "2024-01-26T17:00:00.000Z",
+      "id": "ad83"
+    },
+    {
+      "hoTen": "dddd",
+      "email": "sdbf@gmail.com",
+      "ngaySinh": "2024-01-24T17:00:00.000Z",
+      "id": "ed93"
+    },
+    {
+      "id": "baf7",
+      "hoTen": "hlasidb",
+      "email": "cuhop@gmail.com",
+      "ngaySinh": "2024-01-30T17:00:00.000Z"
+    },
+    {
+      "id": "50a3",
+      "hoTen": "Nguyễn Văn A",
+      "email": "anv@gmail.com",
+      "ngaySinh": "2024-01-24T17:00:00.000Z"
+    },
+    {
+      "id": "c76d",
+      "hoTen": "Leo Messi",
+      "email": "m10@gmail.com",
+      "ngaySinh": "2024-01-12T17:00:00.000Z"
+    },
+    {
+      "id": "ca12",
+      "hoTen": "KKKk",
+      "email": "JJJJ@gmail.com",
+      "ngaySinh": "2024-01-25T17:00:00.000Z"
+    }
+  ]
+}
